@@ -41,20 +41,6 @@ export default merge(baseConfig, {
 
   module: {
     rules: [
-      {
-        test: /.s?css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              // `./dist` can't be inerhited for publicPath for styles. Otherwise generated paths will be ./dist/dist
-              publicPath: './',
-            },
-          },
-          'css-loader',
-          'sass-loader'
-        ],
-      },
       // WOFF Font
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
