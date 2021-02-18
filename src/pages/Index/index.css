@@ -1,0 +1,162 @@
+.container {
+  padding: 40px;
+  min-width: 1080px;
+  min-height: 640px;
+}
+
+.titleLine {
+  display: flex;
+  align-items: center;
+}
+
+.titleLogo {
+  height: 30px;
+  width: 30px;
+  margin-right: 8px;
+}
+
+.titleText {
+  color: #0b267b;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.contentWrapper {
+  margin-top: 80px;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subTitle {
+  color: #2254f4;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.imgPart {
+  display: flex;
+}
+
+.desc {
+  flex: 1;
+  color: #333;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.imgPartDrop {
+  cursor: pointer;
+  margin-left: 28px;
+  width: 170px;
+  height: 170px;
+  border: 1px dashed #b4c6ff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.57);
+  color: #b4c6ff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.25s;
+}
+
+.imgPartDrop:hover {
+  color: #cdd8fd;
+  border: 1px dashed #c2d0fd;
+}
+
+.leftCard {
+  margin-right: 32px;
+  min-width: 480px;
+  width: 45%;
+}
+
+.cardTitle {
+  color: #2254f4;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.resultWrapper {
+  margin-top: 32px;
+}
+
+.resultTitle {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.resultContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 12px;
+  color: #666;
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 38px;
+  -webkit-user-select: text;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.rightCard {
+  min-width: 480px;
+  width: 45%;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.genInput {
+  flex: 1;
+  border: none;
+  padding: 0 12px;
+  min-height: 38px;
+  margin-right: 18px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #666;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.canvasWrapper {
+  margin-top: 12px;
+}
+
+.buttonsWrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonsWrapper button {
+  margin-right: 24px;
+}
+
+.defaultQrResult {
+  width: 360px;
+  height: 360px;
+  border: 1px dashed #b4c6ff;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.57);
+  color: #b4c6ff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

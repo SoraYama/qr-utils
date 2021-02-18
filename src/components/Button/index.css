@@ -1,0 +1,24 @@
+.buttonWrapper {
+  transition: all ease 0.25s;
+  background-color: #2254F4;
+  border-radius: 4px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.buttonText {
+  color: #fff;
+  font-size: 18px;
+}
+
+.buttonWrapper:hover {
+  opacity: 0.8;
+}
+
+.buttonWrapper:active {
+  opacity: 1;
+  background-color: #1248f8;
+}
