@@ -103,8 +103,14 @@
   font-size: 18px;
   line-height: 24px;
   min-height: 38px;
-  -webkit-user-select: text;
   font-family: 'Courier New', Courier, monospace;
+  overflow-x: scroll;
+  word-break: break-all;
+  -webkit-user-select: text;
+}
+
+.resultContent::-webkit-scrollbar {
+  display: none;
 }
 
 .rightCard {
