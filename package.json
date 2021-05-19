@@ -1,7 +1,7 @@
 {
   "name": "qr-utils",
   "productName": "qr-utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple tool for generating QR code OR parsing QR code",
   "scripts": {
     "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
@@ -31,7 +31,7 @@
     ]
   },
   "build": {
-    "productName": "二维码小工具",
+    "productName": "qr-utils",
     "appId": "org.sorayama.qrutils",
     "files": [
       "dist/",
