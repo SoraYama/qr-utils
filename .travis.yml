@@ -6,10 +6,6 @@ sudo: false
 cache:
   directories:
     - node_modules
-branches:
-  only:
-    - main
-    - /v\d+\.\d+[a-z]/
 deploy:
   provider: releases
   github_token: $GITHUB_TOKEN
