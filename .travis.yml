@@ -1,0 +1,29 @@
+language: node_js
+os: osx
+node_js:
+  - 12
+sudo: false
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - main
+deploy:
+  - provider: releases
+    github_token: $GITHUB_TOKEN
+    file: release/*
+    skip_cleanup: true
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX=g++-4.8; fi
+  - npm install -g yarn
+install:
+  - yarn
+script:
+  - yarn run build
