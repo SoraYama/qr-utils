@@ -9,6 +9,7 @@ cache:
 branches:
   only:
     - main
+    - /v\d+\.\d+[a-z]/
 deploy:
   provider: releases
   github_token: $GITHUB_TOKEN
