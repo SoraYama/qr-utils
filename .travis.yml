@@ -11,6 +11,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   file: release/*
   skip_cleanup: true
+  edge: true
   on:
     tags: true
 addons:
