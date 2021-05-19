@@ -10,10 +10,12 @@ branches:
   only:
     - main
 deploy:
-  - provider: releases
-    github_token: $GITHUB_TOKEN
-    file: release/*
-    skip_cleanup: true
+  provider: releases
+  github_token: $GITHUB_TOKEN
+  file: release/*
+  skip_cleanup: true
+  on:
+    tags: true
 addons:
   apt:
     sources:
@@ -26,4 +28,4 @@ before_install:
 install:
   - yarn
 script:
-  - yarn run build
+  - yarn run package
