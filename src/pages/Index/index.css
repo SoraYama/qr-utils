@@ -1,7 +1,6 @@
 .container {
   padding: 40px;
   min-width: 1080px;
-  min-height: 640px;
 }
 
 .titleLine {
@@ -94,23 +93,30 @@
 .resultContent {
   display: flex;
   width: 100%;
-  align-items: center;
   margin-top: 12px;
   border-radius: 4px;
   background-color: #fff;
-  padding: 0 12px;
+  padding: 8px 12px;
   color: #666;
   font-size: 18px;
   line-height: 24px;
   min-height: 38px;
+  max-height: 240px;
   font-family: 'Courier New', Courier, monospace;
-  overflow-x: scroll;
+  overflow-y: scroll;
   word-break: break-all;
   -webkit-user-select: text;
 }
 
 .resultContent::-webkit-scrollbar {
-  display: none;
+  background-color: transparent;
+  width: 8px;
+}
+
+.resultContent::-webkit-scrollbar-thumb {
+  background-color: #efefef;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
 }
 
 .rightCard {

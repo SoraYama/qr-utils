@@ -70,7 +70,7 @@ const createWindow = async () => {
   mainWindow = new BrowserWindow({
     show: false,
     width: 1280,
-    height: 892,
+    height: 960,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       nodeIntegration: true,

@@ -40,7 +40,7 @@ const Index = () => {
 
   const genCode = () => {
     QRCode.toCanvas(
-      (canvasRef.current as unknown) as HTMLCanvasElement,
+      canvasRef.current as unknown as HTMLCanvasElement,
       toBeGeneratedText,
       {
         width: 360,
